@@ -1,22 +1,21 @@
-this would be the file stucture and what to be in it ig lol
+## Project Structure
 
-IDS-Email-a3/
-│
-├── main.py
-├── README.md
-├── Report.pdf
-│
-├── data/
-│   ├── Events.txt
-│   ├── Stats.txt
-│   ├── baseline_stats.txt     # output from analysis
-│   └── logs/
+```
+IDS-Email-A3/
+├── main.py                 # Main application entry point
+├── README.md              # Project documentation
+├── Report.pdf             # Analysis report
+├── data/                  # Data directory
+│   ├── Events.txt         # Event data input
+│   ├── Stats.txt          # Statistics data input  
+│   ├── baseline_stats.txt # Analysis output
+│   └── logs/              # Application logs
 │       ├── day1.log
 │       ├── day2.log
 │       └── ...
-│
-└── src/
-    ├── event_parser.py        # read Events.txt + Stats.txt, validate
-    ├── activity_engine.py     # generate simulated events + logging
-    ├── analysis_engine.py     # compute means, SD, baseline
-    └── alert_engine.py        # anomaly detection + thresholds
+└── src/                   # Source code
+    ├── event_parser.py    # Parse and validate events/stats
+    ├── activity_engine.py # Generate simulated events
+    ├── analysis_engine.py # Compute means, SD, baseline
+    └── alert_engine.py    # Anomaly detection
+```
